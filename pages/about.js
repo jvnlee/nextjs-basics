@@ -1,3 +1,10 @@
+import PageTitle from "../components/PageTitle";
+
 export default function About() {
-  return <h1>About</h1>;
+  return (
+    <>
+      <PageTitle title="About" />
+      <h1>About</h1>
+    </>
+  );
 }

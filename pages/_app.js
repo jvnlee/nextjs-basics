@@ -1,16 +1,17 @@
-import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
-      <NavBar />
+    <Layout>
       <Component {...pageProps} />
       <style jsx global>{`
-        a {
-          color: gray;
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+        * {
+          font-family: "Poppins", sans-serif;
+          color: black;
         }
       `}</style>
-    </>
+    </Layout>
   );
 }
 
