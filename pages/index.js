@@ -23,15 +23,7 @@ export default function Home({ results }) {
 
   const router = useRouter();
   const handleClick = (id, title) => {
-    router.push(
-      {
-        pathname: `/${id}`,
-        query: {
-          title,
-        },
-      },
-      `/${id}`
-    );
+    router.push(`/movies/${title}/${id}`);
   };
   return (
     <div className="container">
@@ -51,7 +43,7 @@ export default function Home({ results }) {
               height={600}
             />
           </div>
-          <Link href={`/${movie.id}`}>
+          <Link href={`/movies/${movie.original_title}/${movie.id}`}>
             <a>
               <h4>{movie.original_title}</h4>
             </a>
