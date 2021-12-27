@@ -10,6 +10,14 @@ export default function App({ Component, pageProps }) {
           font-family: "Poppins", sans-serif;
           color: black;
         }
+        body {
+          max-width: 520px;
+          width: 100%;
+          margin: 0 auto;
+        }
+        a {
+          all: unset;
+        }
       `}</style>
     </Layout>
   );

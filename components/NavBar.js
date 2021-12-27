@@ -24,6 +24,7 @@ export default function NavBar() {
           align-items: center;
           padding-top: 20px;
           margin-bottom: 50px;
+          border-radius: 0 0 30px 30px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
             rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
         }
@@ -36,6 +37,7 @@ export default function NavBar() {
           font-size: 18px;
           text-decoration: none;
           padding: 10px;
+          cursor: pointer;
         }
         .active {
           border-bottom: 3px solid black;
